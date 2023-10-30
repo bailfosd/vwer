@@ -132,7 +132,7 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
   
-STATIC_ROOT = '/home/kontural.online/public_html/vwer/Sonhazrirliq/mon/static/'
+STATIC_ROOT = '/home/kontural.online/public_html/vwer/mon/static/'
 
 
   
