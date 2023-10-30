@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'mon',
-    'rest_framework',
 ]
 
 
@@ -133,7 +132,7 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
   
-STATIC_ROOT = '/home/kontural.online/public_html/Sonhazrirliq/mon/static/'
+STATIC_ROOT = '/home/kontural.online/public_html/vwer/Sonhazrirliq/mon/static/'
 
 
   
